@@ -169,7 +169,7 @@ window.addEventListener("mousemove", function (event) {
 
 });
 
-function senMail(){
+function sendMail(){
   let params = {
     name : document.getElementById("name").value,
     phone : document.getElementById("phone").value,
