@@ -168,3 +168,19 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+
+function senMail(){
+  let params = {
+    name : document.getElementById("name").value,
+    phone : document.getElementById("phone").value,
+    person : document.getElementById("person").value,
+    date: document.getElementById("date").value,
+    time : document.getElementById("time").value,
+    message : document.getElementById("message").value,
+    
+  }
+  emailjs.send('your id here like service_dhjhfjf', 'template id here', params).then(alert('Mesaj trimis!'))
+}
+
+
+    
